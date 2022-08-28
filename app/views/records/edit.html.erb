@@ -1,0 +1,22 @@
+<h2>学習内容編集</h2>
+<%= form_with model: @record, url: record_path, method: :patch do |f| %>
+  <div class="title">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="content">
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+  </div>
+
+  <div class="date">
+    <%= f.label :start_time %>
+    <%= f.date_select :start_time %>
+  </div>
+
+  <div class="action">
+    <%= f.submit "登録する" %>
+  </div>
+
+<% end  %>
