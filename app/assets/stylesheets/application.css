@@ -14,11 +14,41 @@
  *= require_tree .
  *= require_self
  */
+
+ .main-visual {
+  width: 100%;
+  height: 400px;
+  background-image: url(background.jpg);
+  background-size: cover;
+ }
+
+.main-visual-text {
+    color: white;
+}
+
+main {
+  width: 840px;
+  margin: 50px auto;
+}
+
+
+.day-week {
+    background: white;
+    color: black;
+}
+
+.wday-1, .wday-2, .wday-3, .wday-4, .wday-5 {
+    background: white;
+    color: black;
+}
+
+/*日曜日を赤色に変える */
 .wday-0 {
     background: #ffeaea;
     color: #ff505c;
   }
 
+/*土曜日を青色に変える */
 .wday-6 {
     background: #d4ebff;
     color: #5984dc;
